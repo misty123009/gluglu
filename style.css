@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Google Sans', Roboto, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+
+.desc {
+  font-size: 15px;
+  color: #a9a9a9;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.link a {
+  color: #8ab4f8;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 0;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  background-color: #000;
+  border: 1px solid #5f6368;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8ab4f8;
+}
+
+.btn-container {
+  text-align: right;
+  margin-top: 40px;
+}
+
+button {
+  background-color: #8ab4f8;
+  color: black;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  input {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
