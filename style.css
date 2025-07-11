@@ -10,12 +10,17 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  padding-top: 48px;
+  align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -23,31 +28,53 @@ body {
   font-weight: 500;
   margin-bottom: 24px;
   color: white;
+  text-align: center;
 }
 
 .heading {
   font-size: 26px;
   font-weight: 400;
   margin: 0 0 12px;
+  text-align: center;
 }
 
 .desc {
   font-size: 15px;
-  color: #a9a9a9;
-  line-height: 1.5;
+  color: grey;
+  line-height: 1.6;
   margin-bottom: 8px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.link-top {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* ✅ This line added */
+}
+
+.link-top a {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+
+.link {
+  font-size: 14px;
+  text-align: left;
+  margin: 8px 0;
+  width: 80%;
 }
 
 .link a {
   color: #8ab4f8;
-  font-size: 14px;
   text-decoration: none;
   display: inline-block;
-  margin: 8px 0;
+  margin: 4px 0;
 }
 
 input {
-  width: 100%;
+  width: 80%;
   padding: 16px;
   background-color: #000;
   border: 1px solid #5f6368;
@@ -63,6 +90,7 @@ input:focus {
 }
 
 .btn-container {
+  width: 80%;
   text-align: right;
   margin-top: 40px;
 }
